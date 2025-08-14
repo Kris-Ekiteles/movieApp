@@ -66,6 +66,7 @@ const AddMovies = ({ onAddMovies }) => {
       onChange={handleInputChange}
       required
       />
+      <button type="submit">Add Movie</button>
     </form>
   );
 };
