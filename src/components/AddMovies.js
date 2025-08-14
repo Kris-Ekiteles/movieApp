@@ -54,6 +54,18 @@ const AddMovies = ({ onAddMovies }) => {
       onChange={handleInputChange}
       required
       />
+
+      <input 
+      name="rating"
+      type="number"
+      min='0'
+      max="10"
+      step="0.1"
+      placeholder="rating(1-10)"
+      value={newMovie.rating}
+      onChange={handleInputChange}
+      required
+      />
     </form>
   );
 };
