@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import MovieCard from "./MovieCard";
+import "./AddMovies.css"
 
 const AddMovies = ({ onAddMovies }) => {
   const [newMovie, setNewMovie] = useState({
