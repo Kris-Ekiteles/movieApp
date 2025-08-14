@@ -1,0 +1,12 @@
+.filter {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+
+}
+
+.filter input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
