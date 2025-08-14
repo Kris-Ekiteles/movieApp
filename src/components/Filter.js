@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import "./Filter.css"
 
 const Filter = ({onFilterChange}) => {
 const [filters, setFilters] = useState({title:'', rate:''});
