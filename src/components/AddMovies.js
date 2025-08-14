@@ -35,6 +35,13 @@ const AddMovies = ({onAddMovies}) => {
     required
     />
 
+<textarea 
+name='description'
+placeholder='Description'
+value={newMovie.description}
+onChange={handleInputChange}
+required
+/>
    </form>
   )
 }
