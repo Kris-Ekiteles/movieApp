@@ -25,9 +25,17 @@ const AddMovies = ({onAddMovies}) => {
         }
     }
   return (
-    <div>
-      
-    </div>
+   <form className='add-movie' onSubmit={handleSubmit}>
+    <h2>Add new Movie</h2>
+    <input 
+    name="title"
+    placeholder='Title'
+    value={newMovie.title}
+    onChange={handleInputChange}
+    required
+    />
+
+   </form>
   )
 }
 
