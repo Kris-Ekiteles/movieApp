@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import MovieCard from './MovieCard';
 
-const MovieList = () => {
+const MovieList = ({movies}) => {
   return (
-    <div>
-      
+    <div className='movie-list'>
+      {movies.map((movie) =>(
+        <MovieCard key={movie.id} movie={movie} />
+      ))}
     </div>
   )
 }
