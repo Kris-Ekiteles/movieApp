@@ -1,19 +1,19 @@
 import React, {useState} from 'react';
 
 
-const MovieCard = () => {
+const MovieCard = ({movie}) => {
   //state hooks for title and description
 
-  const [ltitle, setTitle] = useState('Default Title');
-  const [description, setDescription]=useState('Default Description')
   return (
-    <div>
-<h1> movie app</h1>
- <div className='card'>
-  <img src='' />
- </div>
+    <div className="movie-app">
+      <img src={movie.posterURL} alt={movie.title} />
+      <div className="movie-details">
+        <h3>{movie.title}</h3>
+        <p>{movie.description}</p>
+        <div className="rating"> {movie.rating}/10</div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default MovieCard
