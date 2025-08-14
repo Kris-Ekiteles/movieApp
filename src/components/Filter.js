@@ -10,18 +10,26 @@ const handleChange = (e) => {
   onFilterChange(newFilters);
 };
   return (
-    <div className='filter'>
-      <input 
-      type='text'
-      name='title'
-      placeholder='filter by title....'
-      value={filters.title}
-      onChange={handleChange}
+    <div className="filter">
+      <input
+        type="text"
+        name="title"
+        placeholder="filter by title...."
+        value={filters.title}
+        onChange={handleChange}
       />
-      
-      
+
+      <input
+        type="number"
+        name="rate"
+        placeholder="min-rating"
+        min="0"
+        max="10"
+        value={filters.rate}
+        onChange={handleChange}
+      />
     </div>
-  )
+  );
 }
 
 export default Filter;
