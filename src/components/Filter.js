@@ -10,7 +10,15 @@ const handleChange = (e) => {
   onFilterChange(newFilters);
 };
   return (
-    <div>
+    <div className='filter'>
+      <input 
+      type='text'
+      name='title'
+      placeholder='filter by title....'
+      value={filters.title}
+      onChange={handleChange}
+      />
+      
       
     </div>
   )
