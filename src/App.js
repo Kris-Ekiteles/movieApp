@@ -3,8 +3,12 @@ import './App.css';
 import MovieCard from './components/MovieCard';
 import { useState } from 'react';
 import MovieList from './components/MovieList';
+import Filter from './components/Filter';
+import AddMovies from './components/AddMovies';
+
+
 function App() {
-  const [movies, setNewMovies]=useState([
+  const [movies, setMovies]=useState([
     {
       id:1,
       title:"Inception",
@@ -36,7 +40,7 @@ function App() {
     <div className="app">
       <h1>Movie Library</h1>
       <Filter onFilterChange={handleFilterChange} />
-      <AddMovie onAddMovie={handleAddMovie} />
+      <AddMovies onAddMovie={handleAddMovie} />
       <MovieList movies={filteredMovies} />
     </div>
   );
